@@ -1,0 +1,7 @@
+---
+plugin: community.vmware.vmware_vm_inventory
+strict: False
+hostname: "{{ lookup('env', 'VCENTER_HOST') }}"
+username: "{{ lookup('env', 'VCENTER_USER') }}"
+password: "{{ lookup('env', 'VCENTER_PASS') }}"
+validate_certs: False

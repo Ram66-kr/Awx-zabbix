@@ -1,0 +1,9 @@
+---
+- name: Install Zabbix Agent on Linux
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - include_role:
+        name: zabbix_agent
+      vars:
+        target_os: linux
